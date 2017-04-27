@@ -33,7 +33,6 @@ public class DatabaseHelper {
 
     @Inject
     public DatabaseHelper(SqliteHelper dbOpenHelper) {
-
         sqliteHelper = dbOpenHelper;
 
     }

@@ -36,7 +36,7 @@ public class DataBasePresenter extends BasePresenter<DataBaseMVPView> {
     @Override
     public void detachView() {
         super.detachView();
-        if (mSubscription != null) mSubscription.unsubscribe();
+        if (mSubscription != null && !mSubscription.isUnsubscribed()) mSubscription.unsubscribe();
     }
 
     public void loadPlayers() {
